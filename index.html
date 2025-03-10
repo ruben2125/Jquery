@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datos Curiosos con jQuery</title>
+  <!-- Incluimos jQuery desde un CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Enlazamos el archivo de estilos externo -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Datos Curiosos</h1>
+    <p id="parrafo">
+      ¿Sabías que la miel nunca se echa a perder? Se han encontrado vasijas de miel en tumbas egipcias de más de 3,000 años y, sorprendentemente, sigue siendo comestible. ¡Las abejas se comunican con un "baile" para indicar la ubicación de las flores!
+    </p>
+    <button id="toggle-btn">Mostrar/Ocultar Dato Curioso</button>
+  </div>
+  
+  <script>
+    $(document).ready(function() {
+      $("#toggle-btn").click(function() {
+        $("#parrafo").toggle(500); // Alterna la visibilidad con una animación de 500 ms
+      });
+    });
+  </script>
+</body>
+</html>
